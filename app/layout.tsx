@@ -1,3 +1,4 @@
+import { Metadata } from "next"
 import { Geist, Geist_Mono, Inter } from "next/font/google"
 
 import "./globals.css"
@@ -11,6 +12,11 @@ const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
 })
+
+export const metadata: Metadata = {
+  title: "Ishant Bhurani",
+  description: "Ishant Bhurani's developer portfolio",
+}
 
 export default function RootLayout({
   children,
