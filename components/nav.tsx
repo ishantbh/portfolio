@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetHeader,
@@ -64,20 +65,22 @@ export function Nav() {
               <ul className="grid gap-6">
                 {NAV_LINKS.map((link) => (
                   <li key={link.href}>
-                    <Button
-                      variant={link.isCTA ? "default" : "ghost"}
-                      className={cn(
-                        "w-full",
-                        pathname === link.href
-                          ? "font-bold"
-                          : !link.isCTA && "text-muted-foreground"
-                      )}
-                      asChild
-                    >
-                      <Link href={link.href} className="px-2 py-4">
-                        {link.label}
-                      </Link>
-                    </Button>
+                    <SheetClose asChild>
+                      <Button
+                        variant={link.isCTA ? "default" : "ghost"}
+                        className={cn(
+                          "w-full",
+                          pathname === link.href
+                            ? "font-bold"
+                            : !link.isCTA && "text-muted-foreground"
+                        )}
+                        asChild
+                      >
+                        <Link href={link.href} className="px-2 py-4">
+                          {link.label}
+                        </Link>
+                      </Button>
+                    </SheetClose>
                   </li>
                 ))}
               </ul>
