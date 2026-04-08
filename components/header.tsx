@@ -10,7 +10,7 @@ const bitcount_grid_double = Bitcount_Grid_Double({
 
 export function Header() {
   return (
-    <header className="w-full border-b bg-background">
+    <header className="sticky top-0 z-10 w-full border-b bg-background/80 backdrop-blur-2xl">
       <div className="container mx-auto flex h-16 items-center justify-between gap-2 px-4">
         <Link
           href="/"
