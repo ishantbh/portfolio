@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export function HeroSection() {
   return (
-    <section className="flex min-h-[calc(100vh-4rem)] items-center">
+    <section className="relative flex min-h-[calc(100vh-4rem)] items-center">
       <div className="absolute inset-0 -z-10 bg-linear-to-r from-blue-500/10 via-purple-500/10 to-transparent blur-3xl" />
 
       <div className="container mx-auto px-4">
