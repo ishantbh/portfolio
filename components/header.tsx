@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Bitcount_Grid_Double } from "next/font/google"
 import { cn } from "@/lib/utils"
 import { Nav } from "@/components/nav"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 const bitcount_grid_double = Bitcount_Grid_Double({
   subsets: ["latin"],
@@ -18,7 +19,11 @@ export function Header() {
           Ishant Bhurani
         </Link>
 
-        <Nav />
+        <div className="flex items-center gap-4">
+          <Nav />
+
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   )
