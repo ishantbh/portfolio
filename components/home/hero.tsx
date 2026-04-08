@@ -7,7 +7,7 @@ export function HeroSection() {
     <section className="relative flex min-h-[calc(100vh-4rem)] items-center">
       <div className="absolute inset-0 -z-10 bg-linear-to-r from-blue-500/10 via-purple-500/10 to-transparent blur-3xl" />
 
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto animate-in px-4 duration-700 fade-in slide-in-from-bottom-4">
         <div className="flex flex-col items-center justify-center gap-10 lg:flex-row">
           {/* Left */}
           <div className="flex justify-center rounded-full shadow-xl shadow-primary/15 lg:justify-end">
