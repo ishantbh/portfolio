@@ -1,3 +1,5 @@
+import { Project } from "@/lib/types"
+
 export const NAV_LINKS = [
   { href: "/", label: "Home", isCTA: false },
   { href: "/about", label: "About", isCTA: false },
@@ -6,7 +8,7 @@ export const NAV_LINKS = [
   { href: "/#contact", label: "Contact", isCTA: true },
 ] as const
 
-export const PROJECTS = [
+export const PROJECTS: Project[] = [
   {
     title: "Noto Notes App",
     description:
