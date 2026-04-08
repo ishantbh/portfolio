@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { MenuIcon } from "lucide-react"
-import { navLinks } from "@/lib/data"
+import { NAV_LINKS } from "@/lib/data"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import {
@@ -23,7 +23,7 @@ export function Nav() {
       {/* Desktop Nav */}
       <nav className="hidden md:block">
         <ul className="flex items-center gap-4">
-          {navLinks.map((link) => (
+          {NAV_LINKS.map((link) => (
             <li key={link.href}>
               <Button
                 variant={link.isCTA ? "default" : "link"}
@@ -62,7 +62,7 @@ export function Nav() {
             </SheetHeader>
             <nav className="flex-1 px-4">
               <ul className="grid gap-6">
-                {navLinks.map((link) => (
+                {NAV_LINKS.map((link) => (
                   <li key={link.href}>
                     <Button
                       variant={link.isCTA ? "default" : "ghost"}
