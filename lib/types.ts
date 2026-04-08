@@ -8,3 +8,12 @@ export type Project = {
   demo: string
   isFeatured: boolean
 }
+
+export type Blog = {
+  title: string
+  description: string
+  tags: string[]
+  image: string
+  slug: string
+  isFeatured: boolean
+}
