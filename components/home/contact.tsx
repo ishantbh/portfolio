@@ -1,3 +1,4 @@
+import { ContactForm } from "@/components/contact-form"
 import { SocialIcons } from "@/components/social-icons"
 
 export function ContactSection() {
@@ -15,6 +16,7 @@ export function ContactSection() {
         <SocialIcons />
 
         {/* Contact Form */}
+        <ContactForm />
       </div>
     </section>
   )
