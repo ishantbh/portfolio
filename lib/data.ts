@@ -9,6 +9,24 @@ export const NAV_LINKS = [
   { href: "/#contact", label: "Contact", isCTA: true },
 ] as const
 
+export const SKILLS = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Tailwind",
+  "Node.js",
+  "Express",
+  "MongoDB",
+  "PostgreSQL",
+  "MERN",
+  "Next.js",
+  "Firebase",
+  "Vercel",
+  "GitHub",
+] as const
+
 export const PROJECTS: Project[] = [
   {
     title: "Noto Notes App",

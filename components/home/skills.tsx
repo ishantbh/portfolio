@@ -1,3 +1,6 @@
+import { Badge } from "@/components/ui/badge"
+import { SKILLS } from "@/lib/data"
+
 export function SkillsSection() {
   return (
     <section id="skills" className="py-20">
@@ -11,6 +14,17 @@ export function SkillsSection() {
             A selection of things I know
           </p>
         </div>
+
+        {/* Skills List */}
+        <ul className="mx-auto flex w-full max-w-xl flex-wrap items-center justify-center gap-4 md:gap-6">
+          {SKILLS.map((skill, index) => (
+            <li key={index} className="flex items-center gap-1">
+              <Badge variant="secondary" className="p-4 text-base">
+                {skill}
+              </Badge>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   )
