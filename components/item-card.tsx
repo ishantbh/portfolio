@@ -47,7 +47,7 @@ export function ItemCard({
 
       <CardHeader>
         {isFeatured && (
-          <Badge variant="secondary" className="mb-2 rounded py-1">
+          <Badge className="mb-2 rounded bg-linear-to-br from-blue-500 to-purple-500 py-1 font-bold text-white">
             Featured
           </Badge>
         )}
