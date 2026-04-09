@@ -11,10 +11,15 @@ import {
 import { Field, FieldGroup, FieldLabel } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { toast } from "sonner"
 
 export function ContactForm() {
   function handleSubmit(e: React.SubmitEvent<HTMLFormElement>) {
     e.preventDefault()
+
+    // TODO: Send the form data to the server
+
+    toast("Thanks for your message!")
   }
 
   return (
