@@ -21,15 +21,22 @@ export function SocialIcons() {
         </a>
       </Button>
 
-      <Button variant="outline" size="icon" title="Twitter" asChild>
-        <a href="https://leetcode.com/u/ishantbh/" target="_blank">
+      <Button
+        variant="outline"
+        size="icon"
+        title="X (formerly Twitter)"
+        asChild
+      >
+        <a href="https://x.com/" target="_blank">
           <TwitterXIcon className="size-5" />
-          <span className="sr-only">Ishant Bhurani on Twitter</span>
+          <span className="sr-only">
+            Ishant Bhurani on X (formerly Twitter)
+          </span>
         </a>
       </Button>
 
       <Button variant="outline" size="icon" title="LinkedIn" asChild>
-        <a href="https://leetcode.com/u/ishantbh/" target="_blank">
+        <a href="https://www.linkedin.com/in/" target="_blank">
           <LinkedInIcon className="size-5" />
           <span className="sr-only">Ishant Bhurani on LinkedIn</span>
         </a>
