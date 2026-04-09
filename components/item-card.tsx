@@ -20,6 +20,7 @@ type ItemCardProps = {
   href: string
   github?: string
   demo?: string
+  isFeatured?: boolean
 }
 
 export function ItemCard({
@@ -30,6 +31,7 @@ export function ItemCard({
   href,
   github,
   demo,
+  isFeatured,
 }: ItemCardProps) {
   return (
     <Card className="group overflow-hidden pt-0 shadow-primary/10 transition-all hover:shadow-lg">
@@ -44,6 +46,12 @@ export function ItemCard({
       </div>
 
       <CardHeader>
+        {isFeatured && (
+          <Badge variant="secondary" className="mb-2 rounded py-1">
+            Featured
+          </Badge>
+        )}
+
         <CardTitle>
           <Link href={href}>{title}</Link>
         </CardTitle>
