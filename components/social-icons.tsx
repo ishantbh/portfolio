@@ -1,0 +1,39 @@
+import { GitHubIcon } from "@/components/assets/icons/github"
+import { LeetCodeIcon } from "@/components/assets/icons/leetcode"
+import { LinkedInIcon } from "@/components/assets/icons/linkedin"
+import { TwitterXIcon } from "@/components/assets/icons/TwitterX"
+import { Button } from "@/components/ui/button"
+
+export function SocialIcons() {
+  return (
+    <div className="flex items-center justify-center gap-4">
+      <Button variant="outline" size="icon" title="GitHub" asChild>
+        <a href="https://github.com/ishantbh" target="_blank">
+          <GitHubIcon className="size-8" />
+          <span className="sr-only">Ishant Bhurani on GitHub</span>
+        </a>
+      </Button>
+
+      <Button variant="outline" size="icon" title="LeetCode" asChild>
+        <a href="https://leetcode.com/u/ishantbh/" target="_blank">
+          <LeetCodeIcon className="size-6" />
+          <span className="sr-only">Ishant Bhurani on LeetCode</span>
+        </a>
+      </Button>
+
+      <Button variant="outline" size="icon" title="Twitter" asChild>
+        <a href="https://leetcode.com/u/ishantbh/" target="_blank">
+          <TwitterXIcon className="size-5" />
+          <span className="sr-only">Ishant Bhurani on Twitter</span>
+        </a>
+      </Button>
+
+      <Button variant="outline" size="icon" title="LinkedIn" asChild>
+        <a href="https://leetcode.com/u/ishantbh/" target="_blank">
+          <LinkedInIcon className="size-5" />
+          <span className="sr-only">Ishant Bhurani on LinkedIn</span>
+        </a>
+      </Button>
+    </div>
+  )
+}
