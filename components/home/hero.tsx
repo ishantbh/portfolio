@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button"
+import { ArrowBigDown, ChevronDown } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
 export function HeroSection() {
   return (
-    <section className="relative flex min-h-[calc(100vh-4rem)] items-center py-20">
+    <section className="relative flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center py-20">
       <div className="absolute inset-0 -z-10 bg-linear-to-r from-blue-500/10 via-purple-500/10 to-transparent blur-3xl" />
 
       <div className="container mx-auto animate-in px-4 duration-700 fade-in slide-in-from-bottom-4">
@@ -50,6 +51,8 @@ export function HeroSection() {
           </div>
         </div>
       </div>
+
+      <ChevronDown className="absolute bottom-0 block size-8 animate-bounce text-muted-foreground sm:size-12" />
     </section>
   )
 }
