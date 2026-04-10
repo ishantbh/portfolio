@@ -15,5 +15,6 @@ export type Blog = {
   tags: string[]
   image: string
   slug: string
+  href: string
   isFeatured: boolean
 }
