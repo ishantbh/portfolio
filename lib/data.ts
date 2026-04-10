@@ -70,6 +70,7 @@ export const BLOGS: Blog[] = [
     tags: ["Next.js", "Tailwind"],
     image: "/images/noto-notes.png",
     slug: "noto-notes",
+    href: "https://blog.example.com/dummy-blog",
     isFeatured: true,
   },
   {
@@ -79,6 +80,7 @@ export const BLOGS: Blog[] = [
     tags: ["Next.js", "Tailwind"],
     image: "/images/noto-notes.png",
     slug: "noto-notes-1",
+    href: "https://blog.example.com/dummy-blog",
     isFeatured: true,
   },
 ] as const

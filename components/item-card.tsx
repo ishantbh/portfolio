@@ -73,7 +73,13 @@ export function ItemCard({
 
       <CardFooter className="flex gap-3">
         <Button size="sm" asChild>
-          <Link href={href}>Details</Link>
+          {href.startsWith("/") ? (
+            <Link href={href}>Details</Link>
+          ) : (
+            <a href={href} target="_blank">
+              Read More
+            </a>
+          )}
         </Button>
 
         {github && (
