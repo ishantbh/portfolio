@@ -36,10 +36,10 @@ export default function RootLayout({
         inter.variable
       )}
     >
-      <body>
+      <body className="flex min-h-screen flex-col">
         <ThemeProvider>
           <Header />
-          <main>{children}</main>
+          <main className="grow">{children}</main>
           <Footer />
           <Toaster />
         </ThemeProvider>
