@@ -24,7 +24,7 @@ export default async function ProjectDetailsPage(props: {
       <div className="container mx-auto animate-in px-4 duration-700 fade-in slide-in-from-bottom-4">
         <div className="flex flex-col items-center justify-center gap-10">
           <div className="group rounded-md bg-linear-to-br from-blue-500/50 to-purple-500/50 p-0.5 transition-transform duration-300 hover:scale-105">
-            <div className="flex w-fit items-center justify-center overflow-hidden rounded-md shadow-xl shadow-primary/15 transition group-hover:shadow-lg">
+            <div className="flex items-center justify-center overflow-hidden rounded-md shadow-xl shadow-primary/15 transition group-hover:shadow-lg">
               <Image
                 src="/images/noto-notes.png"
                 alt="Ishant Bhurani"
