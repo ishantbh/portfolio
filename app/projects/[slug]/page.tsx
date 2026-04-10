@@ -26,7 +26,7 @@ export default async function ProjectDetailsPage(props: {
           <div className="group rounded-md bg-linear-to-br from-blue-500/50 to-purple-500/50 p-0.5 transition-transform duration-300 hover:scale-105">
             <div className="flex items-center justify-center overflow-hidden rounded-md shadow-xl shadow-primary/15 transition group-hover:shadow-lg">
               <Image
-                src="/images/noto-notes.png"
+                src={project.image}
                 alt="Ishant Bhurani"
                 width={600}
                 height={400}
