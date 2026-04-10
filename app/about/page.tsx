@@ -1,5 +1,7 @@
 import { SocialIcons } from "@/components/social-icons"
+import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function AboutPage() {
   return (
@@ -58,6 +60,10 @@ export default function AboutPage() {
               esse.
             </p>
           </div>
+
+          <Button size="lg" className="px-8" asChild>
+            <Link href="/#contact">Get in touch</Link>
+          </Button>
         </div>
       </div>
     </section>
