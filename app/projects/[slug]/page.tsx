@@ -1,4 +1,5 @@
 import { GitHubIcon } from "@/components/assets/icons/github"
+import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { PROJECTS } from "@/lib/data"
 import { ExternalLinkIcon } from "lucide-react"
@@ -34,27 +35,37 @@ export default async function ProjectDetailsPage(props: {
             </div>
           </div>
 
-          {/* Title */}
           <div className="text-center">
+            {/* Title */}
             <h1 className="text-3xl font-bold tracking-tight sm:text-5xl">
               {project.title}
             </h1>
-          </div>
 
-          <div className="flex items-center justify-center gap-4">
-            <Button size="icon" variant="outline" asChild>
-              <a href={project.github} target="_blank">
-                <GitHubIcon className="size-5" />
-                <span className="sr-only">{project.title} on GitHub</span>
-              </a>
-            </Button>
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
+              {project.tags.map((tag, index) => (
+                <Badge key={index} variant="secondary">
+                  {tag}
+                </Badge>
+              ))}
+            </div>
 
-            <Button size="icon" variant="outline" asChild>
-              <a href={project.demo} target="_blank">
-                <ExternalLinkIcon className="h-4 w-4" />
-                <span className="sr-only">{project.title} Demo</span>
-              </a>
-            </Button>
+            <div className="mt-6 flex items-center justify-center gap-4">
+              <Button variant="outline" asChild>
+                <a href={project.github} target="_blank">
+                  <GitHubIcon className="size-5" />{" "}
+                  <span aria-hidden>GitHub</span>
+                  <span className="sr-only">{project.title} on GitHub</span>
+                </a>
+              </Button>
+
+              <Button variant="outline" asChild>
+                <a href={project.demo} target="_blank">
+                  <ExternalLinkIcon className="h-4 w-4" />{" "}
+                  <span aria-hidden>Demo</span>
+                  <span className="sr-only">{project.title} Demo</span>
+                </a>
+              </Button>
+            </div>
           </div>
 
           {/* Project Details */}
