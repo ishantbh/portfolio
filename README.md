@@ -5,6 +5,7 @@ This is my developer portfolio, built with Next.js + shadcn UI.
 ## 📑 Table of Contents
 
 - [Overview](#overview)
+  - [Screenshots](#screenshots)
   - [Features](#features)
   - [Run Locally](#run-locally)
 - [My process](#my-process)
@@ -17,6 +18,36 @@ This is my developer portfolio, built with Next.js + shadcn UI.
 This is a beautiful developer portfolio built with Next.js. It has a home page, about page, projects page, and a blog page. It also has a contact form, various sections, and a theme toggle.
 
 This portfolio is designed with scalability and real-world UX in mind, using shadcn for reusable components and Tailwind for styling.
+
+### Screenshots
+
+<p align='center'>
+  <img src="screenshots/hero-section-mobile.png" width="30%" alt='Hero Section Mobile' />
+  <img src="screenshots/nav-mobile.png" width="30%" alt='Mobile Navigation' />
+</p>
+
+<p align="center">
+  <img src="screenshots/hero-section.png" width="30%" alt='Hero Section' />
+  <img src="screenshots/hero-section-light.png" width="30%" alt='Hero Section Light Mode' />
+  <img src="screenshots/skills-section.png" width="30%" alt='Skills Section' />
+</p>
+
+<p align="center">
+  <img src="screenshots/featured-projects-section.png" width="30%" alt='Featured Projects Section' />
+  <img src="screenshots/featured-blogs-section.png" width="30%" alt='Featured Blogs Section' />
+  <img src="screenshots/contact-section.png" width="30%" alt='Contact Section' />
+</p>
+
+<p align="center">
+  <img src="screenshots/projects-page.png" width="30%" alt='Projects Page' />
+  <img src="screenshots/project-details-page.png" width="30%" alt='Project Details Page' />
+  <img src="screenshots/error-page.png" width="30%" alt='Error Page' />
+</p>
+
+<p align="center">
+  <img src="screenshots/about-page.png" width="45%" alt='About Page' />
+  <img src="screenshots/blogs-page.png" width="45%" alt='Blogs Page' />
+</p>
 
 ### Features
 
