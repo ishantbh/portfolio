@@ -3,6 +3,7 @@ import { LeetCodeIcon } from "@/components/assets/icons/leetcode"
 import { LinkedInIcon } from "@/components/assets/icons/linkedin"
 import { TwitterXIcon } from "@/components/assets/icons/TwitterX"
 import { Button } from "@/components/ui/button"
+import { MailIcon } from "lucide-react"
 
 export function SocialIcons() {
   return (
@@ -39,6 +40,13 @@ export function SocialIcons() {
         <a href="https://www.linkedin.com/in/" target="_blank">
           <LinkedInIcon className="size-5" />
           <span className="sr-only">Ishant Bhurani on LinkedIn</span>
+        </a>
+      </Button>
+
+      <Button variant="outline" size="icon" title="Email" asChild>
+        <a href="mailto:ishant.dev@outlook.com" target="_blank">
+          <MailIcon className="size-6" />
+          <span className="sr-only">Email Ishant Bhurani</span>
         </a>
       </Button>
     </div>

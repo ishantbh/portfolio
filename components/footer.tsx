@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { NAV_LINKS } from "@/lib/data"
 import { cn } from "@/lib/utils"
+import { MailIcon } from "lucide-react"
 import { Bitcount_Grid_Double } from "next/font/google"
 import Link from "next/link"
 
@@ -70,6 +71,13 @@ export function Footer() {
                   <a href="https://www.linkedin.com/in/" target="_blank">
                     <LinkedInIcon className="size-5" />
                     <span className="sr-only">Ishant Bhurani on LinkedIn</span>
+                  </a>
+                </Button>
+
+                <Button variant="ghost" size="icon" title="Email" asChild>
+                  <a href="mailto:ishant.dev@outlook.com" target="_blank">
+                    <MailIcon className="size-5" />
+                    <span className="sr-only">Email Ishant Bhurani</span>
                   </a>
                 </Button>
               </div>
